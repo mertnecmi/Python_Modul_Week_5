@@ -22,7 +22,6 @@ class Rectangle:
     def perimeter(self):
         """berekent de omtrek van een vierhoek"""
         return 2 * (self.width + self.height)
-    
 
 vierkant = Rectangle(5,7)
 

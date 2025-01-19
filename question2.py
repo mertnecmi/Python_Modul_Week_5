@@ -15,7 +15,7 @@
 # view_teacher_list(self): Okulda çalışan öğretmenlerin listesini görüntülemek için kullanılan bir yöntem. 
 # Öğretmenlerin adlarını ve ana dallarını listeleyin.
 
-class Scholl():
+class Scholl:
     students = []
     teachers = []
     def __init__(self, school_name, foundation_year):
