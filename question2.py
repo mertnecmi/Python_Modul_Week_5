@@ -32,8 +32,8 @@ class Scholl():
             "Teacher": self.teacher,
             "Branch" : self.branch
             }
-        
         self.teachers.append(data)
+        print("Successfull !!!")
     def view_student_list(self):
         print("\n***   STUDENTS LIST   ***")
         for student in self.students:
