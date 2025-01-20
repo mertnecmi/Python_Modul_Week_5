@@ -23,7 +23,7 @@ class Vehicle:
         print(f"Voertuig Jaar : {self.jaar}")
 
 
-class OffRoadVehicle(Vehicle):
+class OffRoad(Vehicle):
     def __init__(self, merk, model, jaar, vier_drive):
         super().__init__(merk, model, jaar)  
         self.vier_drive = vier_drive
@@ -44,7 +44,7 @@ class SportsCar(Vehicle):
 
 
 voertuig = Vehicle("Honda","Civic",2021)
-off_road_vehicle = OffRoadVehicle("Toyota","Raw4",2023,True)
+off_road_vehicle = OffRoad("Toyota","Raw4",2023,True)
 sports_car = SportsCar("Ferrari", "488 Spider", 2021, 330)
 
 
