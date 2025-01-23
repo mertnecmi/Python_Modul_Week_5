@@ -18,11 +18,14 @@ class Rectangle(Shape):
         return self.width * self.height
     
 class Square(Shape):
-    def calculate_area (self):
-        return 2 * (self.width * self.height)
-    
+    def __init__(self, width, height,x ):
+        super().__init__(width, height)
+        self.x = x
+    def calculate_area (self ):
+        return  self.x * (self.width * self.height)
+sh = Shape(34,23)    
 rectangle = Rectangle(4,4)
-square = Square(10,20)
+square = Square(10,20,2)
 
 print(rectangle.calculate_area())
 print(square.calculate_area())

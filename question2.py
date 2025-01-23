@@ -15,6 +15,8 @@
 # view_teacher_list(self): Okulda çalışan öğretmenlerin listesini görüntülemek için kullanılan bir yöntem. 
 # Öğretmenlerin adlarını ve ana dallarını listeleyin.
 
+import pandas as pd
+
 class Scholl:
     students = []
     teachers = []
@@ -36,6 +38,7 @@ class Scholl:
         print("Successfull !!!")
     def view_student_list(self):
         print("\n***   STUDENTS LIST   ***")
+
         for student in self.students:
             print(f"Student Name : {student[0]}  Class : {student[1]}")
     def view_teacher_list(self):
@@ -47,6 +50,7 @@ class Scholl:
 proje = Scholl("mEHMET aKİF lİSESİ", "1972")
 proje.add_new_student("selami","a1")
 proje.add_new_student("fatma","c1")
+
 proje.add_new_teacher("Necmi Mert","Zevzeklik")
 proje.add_new_teacher("Ali Veli","Denemelik")
 
